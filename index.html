@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Toko Buku Kecil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="https://via.placeholder.com/1200x250?text=Selamat+Datang+di+Toko+Buku+Kami" alt="Banner Toko Buku">
+            <h1 id="welcomeMessage">Halo, Pembaca!</h1> <p>Tempat terbaik menemukan kisah baru.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="#contact-us">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Selamat Datang di Toko Buku Kecil Kami</h2>
+            <p>
+                Kami adalah toko buku independen yang bersemangat untuk menghubungkan pembaca dengan buku-buku hebat.
+                Kami percaya setiap buku memiliki cerita unik dan dapat membuka dunia baru bagi Anda.
+            </p>
+            <p>
+                Jelajahi koleksi kami yang beragam, mulai dari fiksi klasik hingga non-fiksi terbaru.
+                Kami juga sering mengadakan acara baca dan diskusi buku.
+            </p>
+        </section>
+
+        <section id="featured-books">
+            <h2>Buku Pilihan</h2>
+            <div class="book-grid">
+                <div class="book-item">
+                    <img src="https://via.placeholder.com/150x200?text=Buku+A" alt="Buku A">
+                    <h3>Judul Buku A</h3>
+                    <p>Penulis: John Doe</p>
+                </div>
+                <div class="book-item">
+                    <img src="https://via.placeholder.com/150x200?text=Buku+B" alt="Buku B">
+                    <h3>Judul Buku B</h3>
+                    <p>Penulis: Jane Smith</p>
+                </div>
+                <div class="book-item">
+                    <img src="https://via.placeholder.com/150x200?text=Buku+C" alt="Buku C">
+                    <h3>Judul Buku C</h3>
+                    <p>Penulis: David Lee</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us">
+            <h2>Hubungi Kami</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="visitorName">Nama Anda:</label>
+                    <input type="text" id="visitorName" name="visitorName" required>
+                    <div class="error-message" id="visitorNameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitorEmail">Email Anda:</label>
+                    <input type="email" id="visitorEmail" name="visitorEmail" required>
+                    <div class="error-message" id="visitorEmailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="visitorMessage">Pesan Anda:</label>
+                    <textarea id="visitorMessage" name="visitorMessage" rows="5" required></textarea>
+                    <div class="error-message" id="visitorMessageError"></div>
+                </div>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Toko Buku Kecil. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
